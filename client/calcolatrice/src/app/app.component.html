@@ -1,8 +1,12 @@
-<input [(ngModel)] = 'n1' type = 'number' required = 'required' placeholder = 'primo numero'/>
-<input [(ngModel)] = 'n2' type = 'number' required = 'required' placeholder = 'secondo numero'/>
-<br/>
-<button (click) = 'somma()'>+</button>
-<button (click) = 'sottrazione()'>-</button>
-<button (click) = 'moltiplicazione()'>*</button>
-<button (click) = 'divisione()'>/</button>
-<p *ngIf = 'risultato.valore'>Il risultato è: {{risultato.valore}}</p>
+<h3> calcolatrice semplice </h3>
+<input [(ngModel)]="numero1" type="number">
+<input [(ngModel)]="numero2" type="number">
+<br>
+<button (click)="somma()">+</button>
+<button (click)="differenza()">-</button>
+<button (click)="moltiplicazione()">*</button>
+<button (click)="divisione()">/</button>
+<br>
+<p>
+  il risultato è: {{risultato}}
+</p>

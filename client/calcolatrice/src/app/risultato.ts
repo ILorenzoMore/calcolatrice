@@ -1,4 +1,3 @@
-export class Risultato{
-	id!: bigint;
-	valore!: number;
+export class Risultato {
+    risultato: number = 0;
 }
